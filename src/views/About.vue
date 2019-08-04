@@ -51,7 +51,7 @@
             </blockquote>
 
         </div>
-
+</div>
         </body>
     
     <footer>
