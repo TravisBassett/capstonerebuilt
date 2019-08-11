@@ -1,16 +1,23 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <p>
+        <router-link to="/">Home</router-link>
+      </p>
+      <p>
+        <router-link to="/SearchResults.vue">Search Results</router-link>
+      </p>
+      <p>
+        <router-link to="/Feature.vue">Feature Page</router-link>
+      </p>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
 
 <style>
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

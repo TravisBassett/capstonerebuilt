@@ -1,77 +1,75 @@
 <template>
-  <div class="home">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Search Page">
-    <meta name="author" content="Travis Bassett">
+<div class="home">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Search Page" />
+    <meta name="author" content="Travis Bassett" />
 
     <title>Feature Page</title>
 
     <!-- Custom fonts for this theme -->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-        type="text/css">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- Theme CSS -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
+    <link href="css/freelancer.min.css" rel="stylesheet" />
+  </head>
+  <div class="container">
+    <div class="jumbotron bg-secondary">
+      <h1 class="display-1 text-center text-white">Search for a Movie</h1>
+      <p class="text-center text-white">Information kindly provided by the OMBD API</p>
+    </div>
 
-</head>
-    <div class="container">
-        <div class="jumbotron bg-secondary">
-            <h1 class="display-1 text-center text-white">Search for a Movie</h1>
-            <p class="text-center text-white">Information kindly provided by the OMBD API</p>
-        </div>
-
-        <a href="results.html">Results Page (Click Here!)</a>
-        <br>
-        <a href="featurepage.html">Feature Page (Click Here!)</a>
-
-        <form action="" class="was-validated">
-          <div class="form-group">
-            <label for="searchitem">Search Phrase:</label>
-            <input type="text" class="form-control" id="searchphrase" placeholder="Search Phrase" name="searchphrase" required>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please fill out this field.</div>
-          </div>
-          <button type="submit" class="btn btn-secondary m-3">Submit</button>
-        </form>
-        <div class="col-xs-4">
-        <form action="">
-          <div class="form-group">
-            <label for="searchitem">Search Phrase (alternative style):</label>
-            <input type="text" class="form-control" id="searchphrase" name="searchphrase">
-          </div>
-          <button type="submit" class="btn btn-secondary m-3">Submit</button>
-        </form>
-
-          </div>
+    <body>
+    <form action class="was-validated">
+      <div class="form-group">
+        <label for="searchitem">Search Phrase:</label>
+        <input
+          type="text"
+          class="form-control"
+          id="searchphrase"
+          placeholder="Search Phrase"
+          name="searchphrase"
+          required
+        />
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Please fill out this field.</div>
       </div>
-    
-    <footer>
-        <div class="jumbotron bg-secondary">
-            <p class="text-center text-white">Copyright Travis Bassett 2019</p>
-        </div>
-    </footer>
-</div>
-    
-    <!--<img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>-->
+      <button type="submit" class="btn btn-secondary m-3">Submit</button>
+    </form>
+    </body>
 
+    <footer>
+      <div class="jumbotron bg-secondary">
+        <p class="text-center text-white">Copyright Travis Bassett 2019</p>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<!--<img alt="Vue logo" src="../assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+</div>-->
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+//import HelloWorld from "@/components/HelloWorld.vue";
 
-export default {
-  name: 'home',
-  components: {
-    HelloWorld
-  }
-}
+//export default {
+  //name: "home",
+  //components: {
+    //HelloWorld
+  //}
+//};
 </script>
