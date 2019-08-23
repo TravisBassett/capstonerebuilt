@@ -14,7 +14,7 @@ export default new Router({
       component: Home
     },
     {
-      path: '/SearchResults.vue',
+      path: '/searchresults',
       name: 'searchresults',
       component: SearchResults
       // route level code-splitting
@@ -23,7 +23,7 @@ export default new Router({
       //component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
     },
     {
-      path: '/Feature.vue',
+      path: '/feature',
       name: 'feature',
       component: Feature
     }
