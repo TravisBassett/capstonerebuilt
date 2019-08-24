@@ -1,7 +1,19 @@
 <template>
   <div class="feature">
-    {{ results }}
-  </div>
+    <h1>{{ featuretitle }}</h1>
+    <p class="text-center text-white">Information kindly provided by the OMBD API</p>
+        <img :src="results.Poster">
+        <h4>Plot</h4>
+        {{ results.Plot }}
+        <h4>Move Details:</h4>
+        <p>Year: {{results.Year}}</p>
+        <p>Rated: {{results.Rated}}</p>
+        <p>Released: {{results.Released}}</p>
+        <p>Runtime: {{results.Runtime}}</p>
+        <p>Genre: {{results.Genre}}</p>
+        <p>Director: {{results.Director}}</p>
+        {{ results }}
+</div>
 </template>
 
 <script>
