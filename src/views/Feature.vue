@@ -20,7 +20,7 @@ export default {
     this.featuretitle = this.$route.params.searchObject.searchphrase;
     console.log(this.featuretitle);
     axios
-      .get("http://www.omdbapi.com/", {
+      .get("https://www.omdbapi.com/", {
         params: {
           t: this.featuretitle,
           apikey: "888d223e"
