@@ -1,16 +1,7 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <p>
-        <router-link to="/">Home</router-link>
-      </p>
-      <p>
-        <router-link to="/SearchResults.vue">Search Results</router-link>
-      </p>
-      <p>
-        <router-link to="/Feature.vue">Feature Page</router-link>
-      </p>
-    </div>
+
+
     <router-view />
   </div>
 </template>
