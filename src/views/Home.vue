@@ -71,7 +71,6 @@ input {
 
 .container
 {
-  background-color: cornsilk
 }
 
 button {
