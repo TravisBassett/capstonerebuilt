@@ -8,7 +8,7 @@
 
       <form v-on:submit.prevent="sendResult">
         <div class="form-group">
-          <label for="searchitem">Search Phrase:</label>
+          <label for="searchitem">Search for a Movie:</label>
           <input
             type="text"
             class="form-control"
@@ -74,7 +74,6 @@ input {
 }
 
 button {
-  background: cornflowerblue;
   padding: 0.5rem;
   font-weight: 250;
   color: #fff;

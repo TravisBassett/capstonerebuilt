@@ -77,16 +77,15 @@ h1,h4 {
   padding-bottom: 1rem,
 }
 .header1 {
-  background-color:cornflowerblue;
-  border: 2px solid;
-  border-radius: 6px;
+  background-color: #6c757d;
+  border-radius: 4px;
+  color: white;
 }
 .header2 {
-  background-color: cornflowerblue;
-  border: 2px solid;
+  background-color: #6c757d ;
   margin-top: 2rem;
-  border-radius: 6px;
-  
+  border-radius: 4px;
+  color: white;  
 }
 img {
   border: 1.2px solid;
