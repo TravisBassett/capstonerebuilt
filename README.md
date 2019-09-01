@@ -1,6 +1,6 @@
 # capstone-bootstrap-vue
 
-## Project Purpose
+### Project Purpose
 ```
 This project is meant to provide the user with an easy way to search for any movie available in the IMDB database and get a variety of informaiton about it, including release year, director, rating, a poster image, and more.
 ```
