@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
+import VueAnalytics from 'vue-analytics'
 
 //put here, believing this to be my app entry point?
 import BootstrapVue from 'bootstrap-vue'
@@ -18,3 +19,7 @@ new Vue({
   router,
   render: h => h(App)
 }).$mount('#app')
+
+Vue.use(VueAnalytics, {
+  id: 'UA-19341970-3'
+})

@@ -51,9 +51,15 @@ export default {
         searchphrase: this.searchphrase
       };
       this.$router.push({ name: "feature", params: { searchObject } });
+    },
+  
+    track () {
+      this.$ga.page('/')
     }
   }
-};
+  
+  }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->

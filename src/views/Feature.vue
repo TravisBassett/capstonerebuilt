@@ -8,14 +8,13 @@
       </div>
 
       <p class="text-center text-white">Information kindly provided by the OMBD API</p>
-      
+
       <div class="header1">
-      <h4>Plot</h4>
+        <h4>Plot</h4>
       </div>
 
       <!-- displays the movie plot -->
       {{ results.Plot }}
-      
       <!-- uses bootstrap-vue features to display movie poster and movie details nicely -->
       <div class="row">
         <div class="col-sm-5">
@@ -24,7 +23,7 @@
 
         <div class="col-sm-7">
           <div class="header2">
-          <h4>Move Details:</h4>
+            <h4>Move Details:</h4>
           </div>
           <p>Year: {{results.Year}}</p>
           <p>Rated: {{results.Rated}}</p>
@@ -56,6 +55,12 @@ export default {
     };
   },
   
+  methods: {
+        track () {
+      this.$ga.page('feature')
+    }
+  },
+
   //API call for single title search, with developer API key
   created: function() {
     //retrieves searchphrase form home.vue from router push for API call
@@ -82,8 +87,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 /*adding padding to h1 and h2 elements*/
-h1,h4 {
-  padding-bottom: 1rem,
+h1,
+h4 {
+  padding-bottom: 1rem;
 }
 /*unique header styling, replicates bootstrap-vue*/
 .header1 {
@@ -93,15 +99,14 @@ h1,h4 {
 }
 /*unique header styling, replicates bootstrap-vue, different that .header1 because of needed margin-top rule*/
 .header2 {
-  background-color: #6c757d ;
+  background-color: #6c757d;
   margin-top: 2rem;
   border-radius: 4px;
-  color: white;  
+  color: white;
 }
 img {
   border: 1.2px solid;
   margin: 1rem;
   border-radius: 6px;
 }
-
 </style>
