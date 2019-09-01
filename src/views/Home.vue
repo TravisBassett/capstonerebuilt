@@ -6,6 +6,7 @@
         <p class="text-center text-white">Information kindly provided by the OMBD API</p>
       </div>
 
+      <!-- form for the submission of a movie title -->
       <form v-on:submit.prevent="sendResult">
         <div class="form-group">
           <label for="searchitem">Search for a Movie:</label>
@@ -30,9 +31,6 @@
     </div>
   </div>
 
-  <!--<img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>-->
 </template>
 
 <script>
@@ -44,6 +42,8 @@ export default {
       searchphrase: ""
     };
   },
+  
+  //A method that takes the search phrase from the form and router pushes it so it can be retrieved in another vue
   methods: {
     sendResult: function() {
       console.log(this.searchphrase);
@@ -59,6 +59,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 
+/* style for the input element on the home page */
 input {
   width: 300px;
   font-size: 1.4rem;
@@ -69,10 +70,7 @@ input {
   border: 2p black solid;
 }
 
-.container
-{
-}
-
+/* Styles for the search botton */
 button {
   padding: 0.5rem;
   font-weight: 250;

@@ -2,6 +2,7 @@
   <div class="feature">
     <div class="container">
       <div class="jumbotron bg-secondary">
+        <!-- displays the move title as an h1 element -->
         <h1 class="display-1 text-center text-white">{{ results.Title }}</h1>
         <p class="text-center text-white">Information kindly provided by the OMBD API</p>
       </div>
@@ -12,7 +13,10 @@
       <h4>Plot</h4>
       </div>
 
+      <!-- displays the movie plot -->
       {{ results.Plot }}
+      
+      <!-- uses bootstrap-vue features to display movie poster and movie details nicely -->
       <div class="row">
         <div class="col-sm-5">
           <img :src="results.Poster" />
@@ -39,6 +43,7 @@
 </template>
 
 <script>
+//imports axios from dev environment, installed with NPM
 import axios from "axios";
 
 export default {
@@ -50,7 +55,10 @@ export default {
       featuretitle: ""
     };
   },
+  
+  //API call for single title search, with developer API key
   created: function() {
+    //retrieves searchphrase form home.vue from router push for API call
     this.featuretitle = this.$route.params.searchObject.searchphrase;
     console.log(this.featuretitle);
     axios
@@ -73,14 +81,17 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+/*adding padding to h1 and h2 elements*/
 h1,h4 {
   padding-bottom: 1rem,
 }
+/*unique header styling, replicates bootstrap-vue*/
 .header1 {
   background-color: #6c757d;
   border-radius: 4px;
   color: white;
 }
+/*unique header styling, replicates bootstrap-vue, different that .header1 because of needed margin-top rule*/
 .header2 {
   background-color: #6c757d ;
   margin-top: 2rem;
@@ -91,10 +102,6 @@ img {
   border: 1.2px solid;
   margin: 1rem;
   border-radius: 6px;
-}
-
-.container
-{
 }
 
 </style>
