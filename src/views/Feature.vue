@@ -17,11 +17,11 @@
       {{ results.Plot }}
       <!-- uses bootstrap-vue features to display movie poster and movie details nicely -->
       <div class="row">
-        <div class="col-sm-5">
-          <img :src="results.Poster" />
+        <div class="col-sm-6">
+          <img :src="results.Poster" alt="movie poster" />
         </div>
 
-        <div class="col-sm-7">
+        <div class="col-sm-6">
           <div class="header2">
             <h4>Move Details:</h4>
           </div>
@@ -108,5 +108,14 @@ img {
   border: 1.2px solid;
   margin: 1rem;
   border-radius: 6px;
+}
+
+.col-6 {width: 50%;}
+
+@media only screen and (max-width: 523px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
 }
 </style>
