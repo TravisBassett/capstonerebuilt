@@ -15,6 +15,6 @@ Deployment
 This site is hosted on Github pages. For deployment it is necessary to download the source files, ensure that your development environment is running NPM, Vue.JS, and Bootstrap-Vue, and to run 'npm run build.' Because this site is hosted on Github pages additional configuration was required to deploy to a docs directory for that purpose.
 
 
-Licesne
+License
 
 The developer is releasing his work under the MIT license. The license applied to supported software may apply to any projects branching from this one. 
